@@ -1,0 +1,16 @@
+<p>
+  product-list Here!
+</p>
+<div *ngFor="let product of objProductList">
+  
+
+  <div class="card" style="width: 18rem;" [title]="product.productName + ' Details'">
+      <img class="card-img-top">
+      <div class="card-body">
+        <h5 class="card-title">{{product.productName}}</h5>
+        <p class="card-text">{{product.productDesc}}</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+
+  <div>
